@@ -1,0 +1,118 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-color: #ffe92e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.layout{
+    background-color:whitesmoke;
+    width: 55rem;
+    height: 30rem;
+    border-radius: 1rem;    
+    position: absolute;    
+    left: 50%;    
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout__logo{
+    margin: 1.5rem 0 0 2rem;    
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+.menu__items{     
+    display: flex;
+    list-style: none;   
+    justify-content: space-between; 
+    margin: 2rem 2rem 0 0;
+    align-items: center;
+    gap: 1rem;
+}
+.menu__link,.card__button{
+    text-decoration: none;
+    color: gray;
+    text-decoration: none;
+    font-size: .8em;    
+    font-weight: 600;    
+}
+.menu__link:hover{
+    color: #c0b01d;
+}
+.menu__link--register:hover,
+.menu__link--login:hover,
+.card__button--order:hover{
+    background-color: gainsboro;
+    color: azure;
+}
+.menu__link--register{
+    background-color: burlywood;    
+    
+}
+.menu__link--login{
+    background-color: #ffe92e;   
+}
+/*
+*/
+.button{
+    border: none;       
+    border-radius: 50px;     
+    padding: 15px 25px; 
+    text-decoration: none;
+} 
+.card{
+    margin: 6rem  0 0 4.5rem;
+}
+.card__title{
+    font-size: .8em;
+}
+.card__subtitle{
+    font-size: 2.3em;
+    width: 250px;
+    margin: .2rem 0;
+    line-height: 1.1;
+}
+.Card__detalle{
+    font-size: .75em;
+    width: 250px;
+}
+.container-order{
+    display: inline-flex;
+    width: 235px;
+    justify-content: space-between;
+}
+.card__price{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.card__price--discount{
+    font-size: .8em;
+    text-decoration: line-through;
+    color: rgb(155, 155, 155);
+    font-weight: bold;
+}
+.card__price--now{    
+    font-size: 1.5em;
+    font-weight: bold;    
+}
+
+.card__button--order{
+    background-color: #ffe92e;
+    font-weight: 900;
+}
+.container-imagen{
+    position: absolute;
+    top:7.5rem;
+    right: 6rem;
+}
+.imagen{
+    width: 400px;
+}
